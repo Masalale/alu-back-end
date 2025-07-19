@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-A script that exports information about all employees' TODO list progress to a JSON file.
+A script that exports information about all employees' TODO list progress
+to a JSON file.
 """
 
 import json
@@ -31,7 +32,7 @@ if __name__ == "__main__":
 
         # Build the JSON structure
         all_employees_data = {}
-        
+
         for todo in todos_data:
             user_id = todo.get("userId")
             user_id_str = str(user_id)
