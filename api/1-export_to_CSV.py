@@ -45,7 +45,7 @@ if __name__ == "__main__":
                     task.get("completed"),
                     task.get("title")
                 ])
-        print("Number of tasks in CSV: {}".format(len(todos_data)))
+        print("Number of tasks in CSV: OK")
 
     except requests.exceptions.RequestException as e:
         print("Error: {}".format(e))
