@@ -47,9 +47,9 @@ if __name__ == "__main__":
                 ])
 
         # Print confirmation messages
-        print("Number of tasks in CSV: OK")
-        print("User ID and Username: OK")
-        print("Formatting: OK")
+        print("Number of tasks in CSV: {}".format(len(todos_data)))
+        print("User ID and Username: {} ({})".format(employee_id, username))
+        print("Formatting: {}".format(file_name))
 
     except requests.exceptions.RequestException as e:
         print("Error: {}".format(e))
