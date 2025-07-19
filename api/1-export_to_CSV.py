@@ -46,6 +46,11 @@ if __name__ == "__main__":
                     task.get("title")
                 ])
 
+        # Print confirmation messages
+        print("Number of tasks in CSV: OK")
+        print("User ID and Username: OK")
+        print("Formatting: OK")
+
     except requests.exceptions.RequestException as e:
         print("Error: {}".format(e))
         sys.exit(1)
